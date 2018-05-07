@@ -6,7 +6,6 @@ class CoinPannCrawler:
 
     def __init__(self):
         self.__url = "http://coinpan.com/free"
-        self.__session = requests.session()
 
     def get_html_text(self):
         url = self.__url

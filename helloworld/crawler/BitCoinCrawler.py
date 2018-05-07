@@ -6,7 +6,6 @@ from bs4 import BeautifulSoup
 class BitCoinCrawler:
 
     def __init__(self, markup='lxml', timeout=5):
-        self.__session = requests.session()
         self.__markup = markup
         self.__timeout = timeout
         self.__url = "http://gall.dcinside.com/board/lists/"
