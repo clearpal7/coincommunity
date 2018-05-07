@@ -19,7 +19,8 @@ def coin_pann_list(request):
     if page is None:
       page = 1
 
-    raw_html = CoinPannCrawler.get_html_text()
+    crawler = CoinPannCrawler()
+    raw_html = crawler.get_html_text()
 
     bsobj = BeautifulSoup(raw_html, 'lxml')
     parsing_tr = bsobj.find_all("tr", {"class": re.compile("^bg")})

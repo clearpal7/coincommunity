@@ -5,10 +5,11 @@ import requests
 class CoinPannCrawler:
 
     def __init__(self):
-        pass
+        self.__url = "http://coinpan.com/free"
+        self.__session = requests.session()
 
     def get_html_text(self):
-        url = "http://coinpan.com/free"
+        url = self.__url
         payload = {'mid': 'free', 'page': '1'}
         headers = {
             'Accept': 'text/html,application/xhtml_xml,application/xml;q=0.9,*/*;q=0.8',
