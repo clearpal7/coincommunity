@@ -5,4 +5,5 @@ from helloworld import views
 
 urlpatterns = [
     url(r'^$', views.HomePageView.as_view()),
+    url(r'^community/coinpann', views.coin_pann_list)
 ]

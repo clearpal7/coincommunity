@@ -4,6 +4,13 @@ Welcome to the AWS CodeStar sample web application
 This sample code helps get you started with a simple Django web application
 deployed by AWS Elastic Beanstalk.
 
+설치할 모듈
+1. pip 설치가 되었다는 가정
+2. pip install requests    #requests 모듈 설치
+3. pip install beautifulsoup4 #beautifulsoup4모듈 설치(크롤링 라이브러리)
+4. pip install lxml #lxml 모듈 설치
+
+
 What's Here
 -----------
 
