@@ -54,7 +54,7 @@ class BitCoinCrawler:
             else:
                 content_url = content[i].find("a")
                 title = content[i].get_text()
-                temp_dict = {"title": title, "url": self.change_url_link_from_internal_to_external(dcinside_main_url, content_url)}
+                temp_dict = {"community_name": "dcInside", "title": title, "url": self.change_url_link_from_internal_to_external(dcinside_main_url, content_url)}
                 logging.debug("BitCoinGallery: ", temp_dict)
                 result.append(temp_dict)
         return result
