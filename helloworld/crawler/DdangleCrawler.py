@@ -7,6 +7,7 @@ from bs4 import BeautifulSoup
 class DdangleCrawler:
 
     def __init__(self, page, size, markup='lxml', timout=5):
+        self.__requests = requests.session()
         self.__url = "https://www.ddengle.com/board_vote_all"
         self.__page = page
         self.__size = size
@@ -28,7 +29,7 @@ class DdangleCrawler:
 
     def get_html_text(self):
         packet = self.set_init()
-        r = requests.get(packet['url'], params=packet['parameter'], headers=packet['header'])
+        r = self.__requests.get(packet['url'], params=packet['parameter'], headers=packet['header'])
         return r.text
 
     def result_parser(self, raw_html):

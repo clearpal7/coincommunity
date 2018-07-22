@@ -4,10 +4,11 @@ import lxml
 import logging
 from bs4 import BeautifulSoup
 
+
 class PpompuCrawler:
 
     def __init__(self, page, size, markup='html.parser', timeout=5):
-        self.__session = requests.session()
+        self.__requests = requests.session()
         self.__url = 'http://www.ppomppu.co.kr/zboard/zboard.php?id=bitcoin'
         self.__page = page
         self.__size = size
@@ -31,7 +32,7 @@ class PpompuCrawler:
 
     def get_html_text(self):
         packet = self.set_init()
-        r = requests.get(packet['url'], headers=packet['header'])
+        r = self.__requests.get(packet['url'], headers=packet['header'])
 
         return r.text
 

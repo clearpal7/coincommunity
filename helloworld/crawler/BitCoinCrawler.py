@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 class BitCoinCrawler:
 
     def __init__(self, markup='lxml', timeout=5):
+        self.__requests = requests.session()
         self.__markup = markup
         self.__timeout = timeout
         self.__url = "http://gall.dcinside.com/board/lists/"
@@ -26,7 +27,7 @@ class BitCoinCrawler:
 
     def post(self, gall_id, page):
         packet_map = self.set_init(gall_id, page)
-        response = requests.get(packet_map['url'], params=packet_map['parameter'], headers=packet_map['header'])
+        response = self.__requests.get(packet_map['url'], params=packet_map['parameter'], headers=packet_map['header'])
         logging.debug("BitCoin Gallery Crawling After Post", response)
         return response.text
 
