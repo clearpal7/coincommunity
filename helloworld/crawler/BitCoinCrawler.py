@@ -27,7 +27,18 @@ class BitCoinCrawler:
 
     def post(self, gall_id, page):
         packet_map = self.set_init(gall_id, page)
-        response = self.__requests.get(packet_map['url'], params=packet_map['parameter'], headers=packet_map['header'])
+        try:
+            response = self.__requests.get(packet_map['url'], params=packet_map['parameter'],
+                                                headers=packet_map['header'], timeout=5)
+        except requests.ConnectionError as e:
+            print("OOPS!! Connection Error. Make sure you are connected to Internet. Technical Details given below.\n")
+            print(str(e))
+        except requests.Timeout as e:
+            print("OOPS!! Timeout Error")
+            print(str(e))
+        except requests.RequestException as e:
+            print("OOPS!! General Error")
+            print(str(e))
         logging.debug("BitCoin Gallery Crawling After Post", response)
         return response.text
 
