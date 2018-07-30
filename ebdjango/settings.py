@@ -121,3 +121,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = 'static'
+
+
+CRAWLING_URL = {
+    'DC_INSIDE': 'http://gall.dcinside.com',
+    'PPOMPU': 'http://www.ppomppu.co.kr/zboard/zboard.php?id=bitcoin',
+    'DDANGLE': 'https://www.ddengle.com/board_vote_all',
+    'COINPANN':  'http://coinpan.com/free'
+}

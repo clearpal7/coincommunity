@@ -8,6 +8,8 @@ from helloworld.crawler.BitCoinCrawler import BitCoinCrawler
 from helloworld.crawler.DdangleCrawler import DdangleCrawler
 from helloworld.crawler.PpompuCrawler import PpompuCrawler
 
+from helloworld.robots import robots
+
 
 # Create your views here.
 class HomePageView(TemplateView):
@@ -72,11 +74,16 @@ def coinone_list(request):
     #코인원은 직접 클라이언트 측에서 API 호출(크롤링 필요없음)
     pass
 
+
 def set_page_is_one(request):
     page = request.GET.get('page')
     if page is None:
         page = 1
     return page
+
+
+def get_robots(request):
+    return JsonResponse(robots.isPossibleThisWebCrawling('temp'))
 
 
 

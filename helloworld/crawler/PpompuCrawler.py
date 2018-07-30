@@ -9,7 +9,7 @@ class PpompuCrawler:
 
     def __init__(self, page, size, markup='html.parser', timeout=5):
         self.__requests = requests.session()
-        self.__url = 'http://www.ppomppu.co.kr/zboard/zboard.php?id=bitcoin'
+        self.__url = 'https://www.ppomppu.co.kr/zboard/zboard.php?id=bitcoin'
         self.__page = page
         self.__size = size
         self.__markup = markup

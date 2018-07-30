@@ -9,7 +9,7 @@ class BitCoinCrawler:
         self.__requests = requests.session()
         self.__markup = markup
         self.__timeout = timeout
-        self.__url = "http://gall.dcinside.com/board/lists/"
+        self.__url = "https://gall.dcinside.com/board/lists/"
 
     def set_init(self, gall_id, page):
         header = {
