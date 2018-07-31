@@ -12,8 +12,13 @@ class CoinPannCrawler:
         url = self.__url
         payload = {'mid': 'free', 'page': '1'}
         headers = {
-            'Accept': 'text/html,application/xhtml_xml,application/xml;q=0.9,*/*;q=0.8',
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:57.0) Gecko/20100101 FireFox/57.0'
+            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+            'accept-encoding': 'gzip, deflate, br',
+            'accept-language': 'ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7',
+            'cache-control': 'max-age=0',
+            'referer': 'https://coinpan.com/',
+            'upgrade-insecure-requests': '1',
+            'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36(KHTML, like Gecko) Chrome/67.0.3396.99 Safari / 537.36'
         }
         r = self.__requests.get(url, params=payload, headers=headers)
         return r.text
