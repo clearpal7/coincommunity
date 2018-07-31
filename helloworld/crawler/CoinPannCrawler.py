@@ -6,7 +6,7 @@ class CoinPannCrawler:
 
     def __init__(self):
         self.__requests = requests.session()
-        self.__url = "http://coinpan.com/free"
+        self.__url = "https://coinpan.com/free"
 
     def get_html_text(self):
         url = self.__url
@@ -15,5 +15,5 @@ class CoinPannCrawler:
             'Accept': 'text/html,application/xhtml_xml,application/xml;q=0.9,*/*;q=0.8',
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:57.0) Gecko/20100101 FireFox/57.0'
         }
-        r = self.__requests.get(url, params=payload, headers=headers)
+        r = self.__requests.get(url, params=payload, headers=headers, verify=False)
         return r.text

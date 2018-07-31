@@ -28,8 +28,8 @@ class BitCoinCrawler:
     def post(self, gall_id, page):
         packet_map = self.set_init(gall_id, page)
         try:
-            response = self.__requests.get(packet_map['url'], params=packet_map['parameter'],
-                                                headers=packet_map['header'], timeout=5)
+            response = self.__requests.get(packet_map['url'], params=packet_map['parameter'], headers=packet_map['header'],
+                                           verify=False)
         except requests.ConnectionError as e:
             print("OOPS!! Connection Error. Make sure you are connected to Internet. Technical Details given below.\n")
             print(str(e))

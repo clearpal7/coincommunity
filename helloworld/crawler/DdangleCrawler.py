@@ -29,7 +29,7 @@ class DdangleCrawler:
 
     def get_html_text(self):
         packet = self.set_init()
-        r = self.__requests.get(packet['url'], params=packet['parameter'], headers=packet['header'])
+        r = self.__requests.get(packet['url'], params=packet['parameter'], headers=packet['header'], verify=False)
         return r.text
 
     def result_parser(self, raw_html):

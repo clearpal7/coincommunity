@@ -32,7 +32,7 @@ class PpompuCrawler:
 
     def get_html_text(self):
         packet = self.set_init()
-        r = self.__requests.get(packet['url'], headers=packet['header'])
+        r = self.__requests.get(packet['url'], headers=packet['header'], verify=False)
 
         return r.text
 
