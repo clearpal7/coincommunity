@@ -7,6 +7,7 @@ from helloworld.crawler.CoinPannCrawler import CoinPannCrawler
 from helloworld.crawler.BitCoinCrawler import BitCoinCrawler
 from helloworld.crawler.DdangleCrawler import DdangleCrawler
 from helloworld.crawler.PpompuCrawler import PpompuCrawler
+import logging
 
 from helloworld.robots import robots
 
@@ -25,7 +26,6 @@ def coin_pann_list(request):
     raw_html = crawler.get_html_text()
 
     bsobj = BeautifulSoup(raw_html, 'lxml')
-    parsing_tr = bsobj.find_all("tr", {"class": re.compile("^bg")})
     content = bsobj.find_all("td", {"class": "title"})
     result = []
     for i in range(0, len(content)):
@@ -36,6 +36,7 @@ def coin_pann_list(request):
         temp_dict = {"community_name": type, "title": title, "url": url}
         result.append(temp_dict)
 
+    logging.debug(result)
     return JsonResponse(result, safe=False)
 
 

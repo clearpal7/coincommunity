@@ -6,6 +6,7 @@ from bs4 import BeautifulSoup
 class BitCoinCrawler:
 
     def __init__(self, markup='lxml', timeout=5):
+        self.logger = logging.getLogger(__name__)
         self.__requests = requests.session()
         self.__markup = markup
         self.__timeout = timeout
@@ -40,14 +41,14 @@ class BitCoinCrawler:
         try:
             response = self.__requests.get(packet_map['url'], params=packet_map['parameter'], headers=packet_map['header'])
         except requests.ConnectionError as e:
-            print("OOPS!! Connection Error. Make sure you are connected to Internet. Technical Details given below.\n")
-            print(str(e))
+            self.logger.error("OOPS!! Connection Error. Make sure you are connected to Internet. "
+                              "Technical Details given below.\n", str(e))
         except requests.Timeout as e:
-            print("OOPS!! Timeout Error")
-            print(str(e))
+            self.logger.error("OOPS!! Timeout Error" ,str(e))
+
         except requests.RequestException as e:
-            print("OOPS!! General Error")
-            print(str(e))
+            self.logger.error("OOPS!! General Error", str(e))
+
         logging.debug("BitCoin Gallery Crawling After Post", response)
         return response.text
 
