@@ -49,7 +49,6 @@ class BitCoinCrawler:
         except requests.RequestException as e:
             self.logger.ERROR("OOPS!! General Error", str(e))
 
-
         return response.text
 
     def change_url_link_from_internal_to_external(self, dc_main_url, dc_internal_url):
