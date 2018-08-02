@@ -50,9 +50,8 @@ class PpompuCrawler:
                 main_content_title = main_content.find("font").get_text()
 
                 temp_dict = {"community_name": "Ppompu", "title": main_content_title, "url": main_content_url}
-                logging.debug("Ppompu: ", temp_dict)
+                logging.debug("Ppompu: %s", temp_dict)
                 result.append(temp_dict)
 
-        logging.INFO("PPOPMPU RESULT : " + str(result))
         return result
 

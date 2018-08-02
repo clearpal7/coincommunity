@@ -41,13 +41,13 @@ class BitCoinCrawler:
         try:
             response = self.__requests.get(packet_map['url'], params=packet_map['parameter'], headers=packet_map['header'])
         except requests.ConnectionError as e:
-            self.logger.ERROR("OOPS!! Connection Error. Make sure you are connected to Internet. "
-                              "Technical Details given below.\n", str(e))
+            self.logger.error("OOPS!! Connection Error. Make sure you are connected to Internet. "
+                              "Technical Details given below.: %s", str(e))
         except requests.Timeout as e:
-            self.logger.ERROR("OOPS!! Timeout Error" ,str(e))
+            self.logger.error("OOPS!! Timeout Error: %s", str(e))
 
         except requests.RequestException as e:
-            self.logger.ERROR("OOPS!! General Error", str(e))
+            self.logger.error("OOPS!! General Error: %s", str(e))
 
         return response.text
 
