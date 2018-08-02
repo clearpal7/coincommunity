@@ -36,7 +36,7 @@ def coin_pann_list(request):
         temp_dict = {"community_name": type, "title": title, "url": url}
         result.append(temp_dict)
 
-    logging.info("COINPANN : %s", str(result))
+    #logging.info("COINPANN : %s", str(result))
     return JsonResponse(result, safe=False)
 
 
@@ -46,9 +46,9 @@ def dc_inside_list(request):
 
     crawler = BitCoinCrawler()
     raw_html = crawler.post(gall_id, page)
-    result = crawler.result_parser(raw_html)
+    result = crawler.result_parser2(raw_html)
 
-    logging.info("DCINSIDE : %s", str(result))
+    #logging.info("DCINSIDE : %s", str(result))
     return JsonResponse(result, safe=False)
 
 
@@ -69,7 +69,7 @@ def ppompu_list(request):
     raw_html = crawler.get_html_text()
     result = crawler.result_parser(raw_html)
 
-    logging.info("PPOPMPU RESULT : %s ", str(result))
+    #logging.info("PPOPMPU RESULT : %s ", str(result))
     return JsonResponse(result, safe=False)
 
 

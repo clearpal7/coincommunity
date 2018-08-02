@@ -1,6 +1,7 @@
 import requests
 import logging
 from bs4 import BeautifulSoup
+import sys
 
 
 class BitCoinCrawler:
@@ -40,6 +41,7 @@ class BitCoinCrawler:
         packet_map = self.set_init(gall_id, page)
         try:
             response = self.__requests.get(packet_map['url'], params=packet_map['parameter'], headers=packet_map['header'])
+            print(sys.getsizeof(response))
         except requests.ConnectionError as e:
             self.logger.error("OOPS!! Connection Error. Make sure you are connected to Internet. "
                               "Technical Details given below.: %s", str(e))
@@ -80,4 +82,17 @@ class BitCoinCrawler:
                 result.append(temp_dict)
         return result
 
+    def result_parser2(self, raw_html):
+        result = []
+        dcinside_main_url = "gall.dcinside.com/"
+        bsObj = BeautifulSoup(raw_html, self.__markup)
+        dcCardList = bsObj.select('tbody > tr > td.t_subject > a')
+        index = 0
+        for card in dcCardList:
+            title = card.text
+            shortUrl = card.get('href')
+            temp_dict = {"community_name": "dcInside", "title": title,
+                         "url": shortUrl}
+            result.append(temp_dict)
 
+        return result
