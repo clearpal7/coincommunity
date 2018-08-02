@@ -36,7 +36,8 @@ def coin_pann_list(request):
         temp_dict = {"community_name": type, "title": title, "url": url}
         result.append(temp_dict)
 
-    logging.debug(result)
+    logging.ERROR(str(result))
+    logging.INFO(str(result))
     return JsonResponse(result, safe=False)
 
 

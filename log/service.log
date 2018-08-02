@@ -1,1 +1,29 @@
-2018-08-02 12:15:08,226 WARNING: Not Found: /favicon.ico
+
+2018-08-02 22:18:16,388 ERROR: Internal Server Error: /community/dcInside
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/views.py", line 49, in dc_inside_list
+    raw_html = crawler.post(gall_id, page)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/crawler/BitCoinCrawler.py", line 53, in post
+    logging.INFO("BitCoin Gallery Crawling After Post", str(response.text))
+TypeError: 'int' object is not callable
+2018-08-02 22:19:32,456 ERROR: Internal Server Error: /community/dcInside
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/views.py", line 51, in dc_inside_list
+    logging.ERROR("DC", str(result))
+TypeError: 'int' object is not callable

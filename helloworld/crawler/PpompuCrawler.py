@@ -53,5 +53,7 @@ class PpompuCrawler:
                 logging.debug("Ppompu: ", temp_dict)
                 result.append(temp_dict)
 
+        logging.ERROR("PPOPMPU RESULT : " + str(result))
+        logging.INFO("PPOPMPU RESULT : " + str(result))
         return result
 

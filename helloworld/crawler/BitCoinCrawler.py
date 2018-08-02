@@ -41,15 +41,15 @@ class BitCoinCrawler:
         try:
             response = self.__requests.get(packet_map['url'], params=packet_map['parameter'], headers=packet_map['header'])
         except requests.ConnectionError as e:
-            self.logger.error("OOPS!! Connection Error. Make sure you are connected to Internet. "
+            self.logger.ERROR("OOPS!! Connection Error. Make sure you are connected to Internet. "
                               "Technical Details given below.\n", str(e))
         except requests.Timeout as e:
-            self.logger.error("OOPS!! Timeout Error" ,str(e))
+            self.logger.ERROR("OOPS!! Timeout Error" ,str(e))
 
         except requests.RequestException as e:
-            self.logger.error("OOPS!! General Error", str(e))
+            self.logger.ERROR("OOPS!! General Error", str(e))
 
-        logging.debug("BitCoin Gallery Crawling After Post", response)
+
         return response.text
 
     def change_url_link_from_internal_to_external(self, dc_main_url, dc_internal_url):
