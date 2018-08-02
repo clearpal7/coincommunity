@@ -17,5 +17,6 @@ artifacts:
     - '.ebextensions/**/*'
     - 'ebdjango/**/*'
     - 'helloworld/**/*'
+    - 'log/**/*'
     - 'manage.py'
     - 'requirements.txt'
