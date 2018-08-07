@@ -25,7 +25,7 @@ def coin_pann_list(request):
     crawler = CoinPannCrawler()
     raw_html = crawler.get_html_text()
 
-    bsobj = BeautifulSoup(raw_html, 'lxml')
+    bsobj = BeautifulSoup(raw_html, 'html.parser')
     content = bsobj.find_all("td", {"class": "title"})
     result = []
     for i in range(0, len(content)):

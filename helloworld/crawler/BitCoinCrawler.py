@@ -6,7 +6,7 @@ import sys
 
 class BitCoinCrawler:
 
-    def __init__(self, markup='lxml', timeout=5):
+    def __init__(self, markup='html.parser', timeout=5):
         self.logger = logging.getLogger(__name__)
         self.__requests = requests.session()
         self.__markup = markup
