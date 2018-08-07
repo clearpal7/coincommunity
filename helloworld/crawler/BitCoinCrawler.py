@@ -53,46 +53,18 @@ class BitCoinCrawler:
 
         return response.text
 
-    def change_url_link_from_internal_to_external(self, dc_main_url, dc_internal_url):
-        external_url=''
-        if dc_internal_url.attrs["href"] is not None:
-            internal_url = dc_internal_url.attrs["href"]
-            if internal_url.startswith("/board"):
-                external_url = dc_main_url + internal_url
-                return external_url
-            elif internal_url.startswith("gall.dcinside.com"):
-                return internal_url
-
     def result_parser(self, raw_html):
         result = []
         dcinside_main_url = "gall.dcinside.com/"
         bsObj = BeautifulSoup(raw_html, self.__markup)
-        dt1 = bsObj.find_all("tr", {"class": "tb"})
+        dcCardList = bsObj.select('tbody > tr > td.t_subject > a.icon_txt_n')
 
-        bsObj = BeautifulSoup(str(dt1), 'lxml')
-        content = bsObj.find_all("td", {"class": "t_subject"})
-        for i in range(0, len(content)):
-            if content[i].find_all("a", {"class": "icon_notice"}):
-                pass
-            else:
-                content_url = content[i].find("a")
-                title = content[i].get_text()
-                temp_dict = {"community_name": "dcInside", "title": title, "url": self.change_url_link_from_internal_to_external(dcinside_main_url, content_url)}
-                logging.debug("BitCoinGallery: ", temp_dict)
-                result.append(temp_dict)
-        return result
-
-    def result_parser2(self, raw_html):
-        result = []
-        dcinside_main_url = "gall.dcinside.com/"
-        bsObj = BeautifulSoup(raw_html, self.__markup)
-        dcCardList = bsObj.select('tbody > tr > td.t_subject > a')
-        index = 0
         for card in dcCardList:
             title = card.text
             shortUrl = card.get('href')
+            url = dcinside_main_url + shortUrl
             temp_dict = {"community_name": "dcInside", "title": title,
-                         "url": shortUrl}
+                         "url": url}
             result.append(temp_dict)
 
         return result

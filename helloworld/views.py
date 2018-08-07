@@ -1,4 +1,4 @@
-import re
+
 from django.shortcuts import render
 from django.views.generic import TemplateView
 from django.http import JsonResponse
@@ -7,7 +7,6 @@ from helloworld.crawler.CoinPannCrawler import CoinPannCrawler
 from helloworld.crawler.BitCoinCrawler import BitCoinCrawler
 from helloworld.crawler.DdangleCrawler import DdangleCrawler
 from helloworld.crawler.PpompuCrawler import PpompuCrawler
-import logging
 
 from helloworld.robots import robots
 
@@ -18,25 +17,44 @@ class HomePageView(TemplateView):
         return render(request, 'index.html', context=None)
 
     
+# def coin_pann_list(request):
+#     type = "coinpann"
+#     page = set_page_is_one(request)
+#
+#     crawler = CoinPannCrawler()
+#     raw_html = crawler.get_html_text()
+#
+#     bsobj = BeautifulSoup(raw_html, 'html.parser')
+#     content = bsobj.find_all("td", {"class": "title"})
+#     result = []
+#     for i in range(0, len(content)):
+#         title = content[i].get_text()
+#         url = content[i].find("a")
+#         if url.attrs["href"] is not None:
+#             url = url.attrs["href"]
+#         temp_dict = {"community_name": type, "title": title, "url": url}
+#         result.append(temp_dict)
+#
+#     #logging.info("COINPANN : %s", str(result))
+#     return JsonResponse(result, safe=False)
+
 def coin_pann_list(request):
     type = "coinpann"
-    page = set_page_is_one(request)
-
     crawler = CoinPannCrawler()
     raw_html = crawler.get_html_text()
 
-    bsobj = BeautifulSoup(raw_html, 'html.parser')
-    content = bsobj.find_all("td", {"class": "title"})
+    bsObj = BeautifulSoup(raw_html, 'html.parser')
+    coinPannList = bsObj.select('table > tbody > tr > td.title > a:nth-of-type(1)')
     result = []
-    for i in range(0, len(content)):
-        title = content[i].get_text()
-        url = content[i].find("a")
-        if url.attrs["href"] is not None:
-            url = url.attrs["href"]
+
+    for coinPann in coinPannList:
+        title_with_EOL = coinPann.text
+        title = title_with_EOL.replace("  ", "").replace("\n","")
+
+        url = coinPann.get('href')
         temp_dict = {"community_name": type, "title": title, "url": url}
         result.append(temp_dict)
 
-    #logging.info("COINPANN : %s", str(result))
     return JsonResponse(result, safe=False)
 
 
@@ -46,9 +64,8 @@ def dc_inside_list(request):
 
     crawler = BitCoinCrawler()
     raw_html = crawler.post(gall_id, page)
-    result = crawler.result_parser2(raw_html)
+    result = crawler.result_parser(raw_html)
 
-    #logging.info("DCINSIDE : %s", str(result))
     return JsonResponse(result, safe=False)
 
 
@@ -69,7 +86,6 @@ def ppompu_list(request):
     raw_html = crawler.get_html_text()
     result = crawler.result_parser(raw_html)
 
-    #logging.info("PPOPMPU RESULT : %s ", str(result))
     return JsonResponse(result, safe=False)
 
 
