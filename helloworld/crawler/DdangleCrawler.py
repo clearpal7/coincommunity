@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 
 class DdangleCrawler:
 
-    def __init__(self, page, size, markup='lxml', timout=5):
+    def __init__(self, page, size, markup='html.parser', timout=5):
         self.__requests = requests.session()
         self.__url = "https://www.ddengle.com/board_vote_all"
         self.__page = page

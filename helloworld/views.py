@@ -16,27 +16,6 @@ class HomePageView(TemplateView):
     def get(self, request, **kwargs):
         return render(request, 'index.html', context=None)
 
-    
-# def coin_pann_list(request):
-#     type = "coinpann"
-#     page = set_page_is_one(request)
-#
-#     crawler = CoinPannCrawler()
-#     raw_html = crawler.get_html_text()
-#
-#     bsobj = BeautifulSoup(raw_html, 'html.parser')
-#     content = bsobj.find_all("td", {"class": "title"})
-#     result = []
-#     for i in range(0, len(content)):
-#         title = content[i].get_text()
-#         url = content[i].find("a")
-#         if url.attrs["href"] is not None:
-#             url = url.attrs["href"]
-#         temp_dict = {"community_name": type, "title": title, "url": url}
-#         result.append(temp_dict)
-#
-#     #logging.info("COINPANN : %s", str(result))
-#     return JsonResponse(result, safe=False)
 
 def coin_pann_list(request):
     type = "coinpann"

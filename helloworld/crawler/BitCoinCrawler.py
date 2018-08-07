@@ -55,7 +55,7 @@ class BitCoinCrawler:
 
     def result_parser(self, raw_html):
         result = []
-        dcinside_main_url = "gall.dcinside.com"
+        dcinside_main_url = "gall.dcinside.com/"
         bsObj = BeautifulSoup(raw_html, self.__markup)
         dcCardList = bsObj.select('tbody > tr > td.t_subject > a.icon_txt_n')
 
