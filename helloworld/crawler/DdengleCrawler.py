@@ -1,22 +1,22 @@
 import requests
-import logging
-import lxml
 from bs4 import BeautifulSoup
 
 
-class DdangleCrawler:
+class DdengleCrawler:
 
-    def __init__(self, page, size, markup='html.parser', timout=5):
+    def __init__(self, page=1, markup='html.parser', timout=5):
         self.__requests = requests.session()
         self.__url = "https://www.ddengle.com/board_vote_all"
         self.__page = page
-        self.__size = size
         self.__mark_up = markup
 
     def set_init(self):
         header = {
-            'Accept': 'text/html,application/xhtml_xml,application/xml;q=0.9,*/*;q=0.8',
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:57.0) Gecko/20100101 FireFox/57.0'
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+            'Accept-Encoding': 'gzip, deflate, br',
+            'Accept-Language': 'ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7',
+            'Upgrade-Insecure-Requests': '1',
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
         }
         parameter = {"page": self.__page}
         url = self.__url
@@ -40,6 +40,6 @@ class DdangleCrawler:
         for card in ddangleList:
             title = card.text
             url = card.get('href')
-            temp_dict = {"community_name":"DDANGLE", "title": title, "url":url}
+            temp_dict = {"community_name": "DDENGLE", "title": title, "url": url}
             result.append(temp_dict)
         return result

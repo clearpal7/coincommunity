@@ -304,3 +304,4 @@ Traceback (most recent call last):
   File "/Users/user/PycharmProjects/coincommunity/helloworld/views.py", line 75, in steemit_list
     result = crawler.result_parser(raw_html)
 AttributeError: 'SteemitCrawler' object has no attribute 'result_parser'
+2018-08-08 23:52:52,251 WARNING: Not Found: /community/ddangle

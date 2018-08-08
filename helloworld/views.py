@@ -5,7 +5,7 @@ from django.http import JsonResponse
 from bs4 import BeautifulSoup
 from helloworld.crawler.CoinPannCrawler import CoinPannCrawler
 from helloworld.crawler.BitCoinCrawler import BitCoinCrawler
-from helloworld.crawler.DdangleCrawler import DdangleCrawler
+from helloworld.crawler.DdengleCrawler import DdengleCrawler
 from helloworld.crawler.PpompuCrawler import PpompuCrawler
 from helloworld.crawler.CoinTalkCrawler import CoinTalkCrawler
 from helloworld.crawler.SteemitCrawler import SteemitCrawler
@@ -58,10 +58,10 @@ def coin_talk_list(request):
     return JsonResponse(result, safe=False)
 
 
-def ddangle_list(request):
+def ddengle_list(request):
     page = set_page_is_one(request)
 
-    crawler = DdangleCrawler(page, 10)
+    crawler = DdengleCrawler()
     raw_html = crawler.get_html_text()
     result = crawler.result_parser(raw_html)
 
