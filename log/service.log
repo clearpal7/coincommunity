@@ -305,3 +305,16 @@ Traceback (most recent call last):
     result = crawler.result_parser(raw_html)
 AttributeError: 'SteemitCrawler' object has no attribute 'result_parser'
 2018-08-08 23:52:52,251 WARNING: Not Found: /community/ddangle
+2018-08-09 00:05:39,284 ERROR: Internal Server Error: /community/ddengle
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/views.py", line 64, in ddengle_list
+    crawler = DdengleCrawler()
+TypeError: __init__() missing 2 required positional arguments: 'page' and 'size'

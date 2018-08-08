@@ -1,4 +1,5 @@
 import requests
+import logging
 from bs4 import BeautifulSoup
 
 
@@ -12,11 +13,8 @@ class DdengleCrawler:
 
     def set_init(self):
         header = {
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-            'Accept-Encoding': 'gzip, deflate, br',
-            'Accept-Language': 'ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7',
-            'Upgrade-Insecure-Requests': '1',
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
+            'Accept': 'text/html,application/xhtml_xml,application/xml;q=0.9,*/*;q=0.8',
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:57.0) Gecko/20100101 FireFox/57.0'
         }
         parameter = {"page": self.__page}
         url = self.__url
@@ -35,11 +33,17 @@ class DdengleCrawler:
     def result_parser(self, raw_html):
         result = []
         bsObj = BeautifulSoup(raw_html, self.__mark_up)
-        ddangleList = bsObj.select('div.bd_lst_wrp > table > tbody > tr > td.title > a.hx.bubble.no_bubble')
+        table = bsObj.find("table", {"class": "bd_lst bd_tb_lst bd_tb"})
 
-        for card in ddangleList:
-            title = card.text
-            url = card.get('href')
-            temp_dict = {"community_name": "DDENGLE", "title": title, "url": url}
-            result.append(temp_dict)
+        bsObj = BeautifulSoup(str(table), self.__mark_up)
+        contents = bsObj.find_all("td", {"class": "title"})
+
+        for i in range(0, len(contents)):
+            if contents[i].find("a", {"class": "hx bubble no_bubble"}):
+                content_url = contents[i].find("a").attrs['href']
+                title = contents[i].get_text()
+                temp_dict = {"community_name": "Ddangle", "title": title, "url": content_url}
+                logging.debug("Ddangle: ", temp_dict)
+                result.append(temp_dict)
+
         return result

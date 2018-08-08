@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e105804d-d627-4e58-8b52-2505249fbdc4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/helloworld/crawler/DdangleCrawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/helloworld/crawler/DdangleCrawler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helloworld/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/helloworld/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helloworld/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/helloworld/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helloworld/crawler/DdengleCrawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/helloworld/crawler/DdengleCrawler.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,28 +14,6 @@
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
-  </component>
-  <component name="DockManager">
-    <window id="3">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="BitCoinCrawler.py" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/helloworld/crawler/BitCoinCrawler.py">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="202">
-                    <caret line="54" column="7" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
-                    <folding>
-                      <element signature="e#0#15#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -68,19 +45,16 @@
         <entry file="file://$PROJECT_DIR$/helloworld/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DdangleCrawler.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/helloworld/crawler/DdangleCrawler.py">
+      <file leaf-file-name="DdengleCrawler.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/helloworld/crawler/DdengleCrawler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="42" column="47" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="15">
+              <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -125,6 +99,7 @@
         <option value="$PROJECT_DIR$/helloworld/urls.py" />
         <option value="$PROJECT_DIR$/helloworld/views.py" />
         <option value="$PROJECT_DIR$/helloworld/crawler/DdangleCrawler.py" />
+        <option value="$PROJECT_DIR$/helloworld/crawler/DdengleCrawler.py" />
       </list>
     </option>
   </component>
@@ -142,10 +117,9 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2" />
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1568" />
+    <option name="width" value="1440" />
     <option name="height" value="836" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -333,17 +307,17 @@
     <frame x="0" y="23" width="1440" height="836" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989858" visible="true" weight="0.14377682" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989858" visible="true" weight="0.14592275" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3292517" />
       <window_info anchor="right" id="R Packages" order="6" />
       <window_info anchor="right" id="R Graphics" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.20028612" side_tool="true" visible="true" weight="0.2774019" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.79971385" visible="true" weight="0.2774019" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.14091559" side_tool="true" visible="true" weight="0.2774019" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7989986" weight="0.2774019" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32882273" />
       <window_info id="Structure" order="1" sideWeight="0.5010142" side_tool="true" weight="0.15379113" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.8369099" weight="0.26522326" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.860515" weight="0.45060894" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.83547926" weight="0.26522326" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.8590844" visible="true" weight="0.2774019" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -366,7 +340,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="58" />
+      <option name="time" value="59" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -496,7 +470,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/helloworld/crawler/DdangleCrawler.py">
+    <entry file="file://$PROJECT_DIR$/helloworld/crawler/DdengleCrawler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
           <caret line="39" column="40" selection-end-line="49" selection-end-column="21" />
@@ -527,7 +501,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/helloworld/crawler/DdangleCrawler.py">
+    <entry file="file://$PROJECT_DIR$/helloworld/crawler/DdengleCrawler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
@@ -712,16 +686,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/helloworld/crawler/BitCoinCrawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="54" column="7" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.venv/lib/python3.6/site-packages/django/core/handlers/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -752,7 +716,17 @@
     <entry file="file://$PROJECT_DIR$/helloworld/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helloworld/crawler/BitCoinCrawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="54" column="7" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -766,13 +740,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/helloworld/crawler/DdangleCrawler.py">
+    <entry file="file://$PROJECT_DIR$/helloworld/crawler/DdengleCrawler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="42" column="47" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
         </state>
       </provider>
     </entry>
