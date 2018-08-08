@@ -42,7 +42,7 @@ class DdengleCrawler:
             if contents[i].find("a", {"class": "hx bubble no_bubble"}):
                 content_url = contents[i].find("a").attrs['href']
                 title = contents[i].get_text()
-                temp_dict = {"community_name": "Ddangle", "title": title, "url": content_url}
+                temp_dict = {"community_name": "Ddengle", "title": title, "url": content_url}
                 logging.debug("Ddangle: ", temp_dict)
                 result.append(temp_dict)
 
