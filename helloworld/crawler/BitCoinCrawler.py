@@ -15,8 +15,6 @@ class BitCoinCrawler:
 
     def set_init(self, gall_id, page):
         header = {
-            #'Accept': 'text/html,application/xhtml_xml,application/xml;q=0.9,*/*;q=0.8',
-            #'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:57.0) Gecko/20100101 FireFox/57.0',
             'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
             'Accept-Encoding': 'gzip, deflate',
             'Accept-Language': 'ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7',

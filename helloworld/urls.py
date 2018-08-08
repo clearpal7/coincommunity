@@ -8,7 +8,8 @@ urlpatterns = [
     url(r'^community/dcInside', views.dc_inside_list),
     url(r'^community/ddangle', views.ddangle_list),
     url(r'^community/ppompu', views.ppompu_list),
-
+    url(r'^community/cointalk', views.coin_talk_list),
+    url(r'^community/steemit', views.steemit_list),
 
     url(r'^community/robots', views.get_robots),
 ]

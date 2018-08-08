@@ -35,17 +35,11 @@ class DdangleCrawler:
     def result_parser(self, raw_html):
         result = []
         bsObj = BeautifulSoup(raw_html, self.__mark_up)
-        table = bsObj.find("table", {"class": "bd_lst bd_tb_lst bd_tb"})
+        ddangleList = bsObj.select('div.bd_lst_wrp > table > tbody > tr > td.title > a.hx.bubble.no_bubble')
 
-        bsObj = BeautifulSoup(str(table), self.__mark_up)
-        contents = bsObj.find_all("td", {"class": "title"})
-
-        for i in range(0, len(contents)):
-            if contents[i].find("a", {"class": "hx bubble no_bubble"}):
-                content_url = contents[i].find("a").attrs['href']
-                title = contents[i].get_text()
-                temp_dict = {"community_name": "Ddangle", "title": title, "url": content_url}
-                logging.debug("Ddangle: ", temp_dict)
-                result.append(temp_dict)
-
+        for card in ddangleList:
+            title = card.text
+            url = card.get('href')
+            temp_dict = {"community_name":"DDANGLE", "title": title, "url":url}
+            result.append(temp_dict)
         return result

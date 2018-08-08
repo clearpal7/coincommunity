@@ -7,6 +7,8 @@ from helloworld.crawler.CoinPannCrawler import CoinPannCrawler
 from helloworld.crawler.BitCoinCrawler import BitCoinCrawler
 from helloworld.crawler.DdangleCrawler import DdangleCrawler
 from helloworld.crawler.PpompuCrawler import PpompuCrawler
+from helloworld.crawler.CoinTalkCrawler import CoinTalkCrawler
+from helloworld.crawler.SteemitCrawler import SteemitCrawler
 
 from helloworld.robots import robots
 
@@ -48,12 +50,29 @@ def dc_inside_list(request):
     return JsonResponse(result, safe=False)
 
 
+def coin_talk_list(request):
+    crawler = CoinTalkCrawler()
+    raw_html = crawler.post()
+    result = crawler.result_parser(raw_html)
+
+    return JsonResponse(result, safe=False)
+
+
 def ddangle_list(request):
     page = set_page_is_one(request)
 
     crawler = DdangleCrawler(page, 10)
     raw_html = crawler.get_html_text()
     result = crawler.result_parser(raw_html)
+
+    return JsonResponse(result, safe=False)
+
+
+def steemit_list(request):
+    #API호출
+    crawler = SteemitCrawler()
+    raw_json = crawler.post()
+    result = crawler.result_parser(raw_json)
 
     return JsonResponse(result, safe=False)
 

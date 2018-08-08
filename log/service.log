@@ -181,3 +181,126 @@ Traceback (most recent call last):
   File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/bs4/element.py", line 1477, in select
     'Unsupported or invalid CSS selector: "%s"' % token)
 ValueError: Unsupported or invalid CSS selector: "a[href=^https"
+2018-08-08 21:38:26,011 WARNING: Not Found: /cointalk
+2018-08-08 21:38:46,570 ERROR: Internal Server Error: /community/cointalk
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/views.py", line 55, in coin_talk_list
+    result = crawler.result_parser(raw_html)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/crawler/CoinTalkCrawler.py", line 53, in result_parser
+    return resultsd
+NameError: name 'resultsd' is not defined
+2018-08-08 22:07:10,494 ERROR: Internal Server Error: /community/steemit
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/views.py", line 73, in steemit_list
+    raw_html = crawler.post()
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/crawler/SteemitCrawler.py", line 41, in post
+    response = self.__requests.get(packet_map['url'], params=packet_map['parameter'], headers=packet_map['header'])
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/requests/sessions.py", line 521, in get
+    return self.request('GET', url, **kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/requests/sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/requests/adapters.py", line 440, in send
+    timeout=timeout
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/urllib3/connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/urllib3/connectionpool.py", line 357, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1280, in _send_request
+    self.putheader(hdr, value)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1207, in putheader
+    raise ValueError('Invalid header name %r' % (header,))
+ValueError: Invalid header name b':authority'
+2018-08-08 22:08:16,183 ERROR: Internal Server Error: /community/steemit
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/views.py", line 73, in steemit_list
+    raw_html = crawler.post()
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/crawler/SteemitCrawler.py", line 41, in post
+    response = self.__requests.get(packet_map['url'], params=packet_map['parameter'], headers=packet_map['header'])
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/requests/sessions.py", line 521, in get
+    return self.request('GET', url, **kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/requests/sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/requests/adapters.py", line 440, in send
+    timeout=timeout
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/urllib3/connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/urllib3/connectionpool.py", line 357, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1280, in _send_request
+    self.putheader(hdr, value)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/http/client.py", line 1207, in putheader
+    raise ValueError('Invalid header name %r' % (header,))
+ValueError: Invalid header name b':authority'
+2018-08-08 23:09:03,675 ERROR: Internal Server Error: /community/steemit
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/views.py", line 74, in steemit_list
+    raw_html = crawler.post()
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/crawler/SteemitCrawler.py", line 41, in post
+    response = self.__requests.post(packet_map['url'], data=json.dump(packet_map['parameter']))
+TypeError: dump() missing 1 required positional argument: 'fp'
+2018-08-08 23:11:35,340 ERROR: Internal Server Error: /community/steemit
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/views.py", line 75, in steemit_list
+    result = crawler.result_parser(raw_html)
+AttributeError: 'SteemitCrawler' object has no attribute 'result_parser'
+2018-08-08 23:13:28,687 ERROR: Internal Server Error: /community/steemit
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/views.py", line 75, in steemit_list
+    result = crawler.result_parser(raw_html)
+AttributeError: 'SteemitCrawler' object has no attribute 'result_parser'
