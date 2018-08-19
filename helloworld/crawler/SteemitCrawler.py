@@ -52,7 +52,7 @@ class SteemitCrawler:
 
     def result_parser(self, raw_json):
         result = []
-        steemit_main_url = "https://steemit.com/kr"
+        steemit_main_url = "https://steemit.com"
         content_dict = raw_json.get('result').get('content')
         content_dict_keys = content_dict.keys()
 

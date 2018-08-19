@@ -318,3 +318,4 @@ Traceback (most recent call last):
   File "/Users/user/PycharmProjects/coincommunity/helloworld/views.py", line 64, in ddengle_list
     crawler = DdengleCrawler()
 TypeError: __init__() missing 2 required positional arguments: 'page' and 'size'
+2018-08-19 14:52:11,425 WARNING: Not Found: /favicon.ico

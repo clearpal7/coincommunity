@@ -73,6 +73,7 @@ def steemit_list(request):
     crawler = SteemitCrawler()
     raw_json = crawler.post()
     result = crawler.result_parser(raw_json)
+    print(JsonResponse(result, safe=False))
 
     return JsonResponse(result, safe=False)
 
