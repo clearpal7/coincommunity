@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 
 class CoinTalkCrawler:
 
-    def __init__(self, mark_up='html.parser', timeout=5, page=1):
+    def __init__(self, page=1, mark_up='html.parser', timeout=5):
         self.__requests = requests.session()
         self.__markup = mark_up
         self.__timeout = timeout

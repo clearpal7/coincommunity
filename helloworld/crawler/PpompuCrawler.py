@@ -7,13 +7,14 @@ from bs4 import BeautifulSoup
 
 class PpompuCrawler:
 
-    def __init__(self, page, size, markup='html.parser', timeout=5):
+    def __init__(self, page, divpage, markup='html.parser', timeout=5):
         self.__requests = requests.session()
-        self.__url = 'https://www.ppomppu.co.kr/zboard/zboard.php?id=bitcoin'
+        self.__url = 'https://www.ppomppu.co.kr/zboard/zboard.php'
         self.__page = page
-        self.__size = size
+        self.__divpage = divpage
         self.__markup = markup
         self.__timeout = timeout
+        self.__id = 'bitcoin'
 
     def set_init(self):
         header = {
@@ -21,7 +22,7 @@ class PpompuCrawler:
             'Accept-Encoding': None,
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:57.0) Gecko/20100101 FireFox/57.0'
         }
-        parameter = {'page': self.__page}
+        parameter = {'page': self.__page, 'divpage': self.__divpage, 'id': self.__id}
         url = self.__url
         packet_map = {
             'header': header,
@@ -32,7 +33,7 @@ class PpompuCrawler:
 
     def get_html_text(self):
         packet = self.set_init()
-        r = self.__requests.get(packet['url'], headers=packet['header'])
+        r = self.__requests.get(packet['url'], headers=packet['header'], params=packet['parameter'])
 
         return r.text
 

@@ -4,13 +4,14 @@ import requests
 
 class CoinPannCrawler:
 
-    def __init__(self):
+    def __init__(self, page=1):
         self.__requests = requests.session()
-        self.__url = "https://coinpan.com/free"
+        self.__page = page
+        self.__url = "https://coinpan.com/index.php"
 
     def get_html_text(self):
         url = self.__url
-        payload = {'mid': 'free', 'page': '1'}
+        payload = {'mid': 'free', 'page': self.__page}
         headers = {
             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
             'accept-encoding': 'gzip, deflate, br',

@@ -21,14 +21,15 @@ class HomePageView(TemplateView):
 
 def coin_pann_list(request):
     type = "coinpann"
-    crawler = CoinPannCrawler()
+    page = set_page_is_one(request)
+    crawler = CoinPannCrawler(page)
     raw_html = crawler.get_html_text()
 
     bsObj = BeautifulSoup(raw_html, 'html.parser')
     coinPannList = bsObj.select('table > tbody > tr > td.title > a:nth-of-type(1)')
     result = []
 
-    for coinPann in coinPannList:
+    for coinPann in coinPannList[5:]:
         title_with_EOL = coinPann.text
         title = title_with_EOL.replace("  ", "").replace("\n","")
 
@@ -43,7 +44,7 @@ def dc_inside_list(request):
     gall_id = "bitcoins"
     page = set_page_is_one(request)
 
-    crawler = BitCoinCrawler()
+    crawler = BitCoinCrawler(page)
     raw_html = crawler.post(gall_id, page)
     result = crawler.result_parser(raw_html)
 
@@ -51,7 +52,8 @@ def dc_inside_list(request):
 
 
 def coin_talk_list(request):
-    crawler = CoinTalkCrawler()
+    page = set_page_is_one(request)
+    crawler = CoinTalkCrawler(page)
     raw_html = crawler.post()
     result = crawler.result_parser(raw_html)
 
@@ -61,7 +63,7 @@ def coin_talk_list(request):
 def ddengle_list(request):
     page = set_page_is_one(request)
 
-    crawler = DdengleCrawler()
+    crawler = DdengleCrawler(page)
     raw_html = crawler.get_html_text()
     result = crawler.result_parser(raw_html)
 
@@ -70,7 +72,12 @@ def ddengle_list(request):
 
 def steemit_list(request):
     #API호출
-    crawler = SteemitCrawler()
+    page = request.GET.get('page')
+    if page is None:
+        page = 0
+    params = request.GET.get('params')
+
+    crawler = SteemitCrawler(page, params)
     raw_json = crawler.post()
     result = crawler.result_parser(raw_json)
     print(JsonResponse(result, safe=False))
@@ -80,8 +87,9 @@ def steemit_list(request):
 
 def ppompu_list(request):
     page = set_page_is_one(request)
-    crawler = PpompuCrawler(page, 10)
+    div_page = 19
 
+    crawler = PpompuCrawler(page, div_page)
     raw_html = crawler.get_html_text()
     result = crawler.result_parser(raw_html)
 

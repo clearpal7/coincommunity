@@ -319,3 +319,22 @@ Traceback (most recent call last):
     crawler = DdengleCrawler()
 TypeError: __init__() missing 2 required positional arguments: 'page' and 'size'
 2018-08-19 14:52:11,425 WARNING: Not Found: /favicon.ico
+2018-09-09 09:53:44,295 WARNING: Not Found: /favicon.ico
+2018-09-09 09:53:49,441 WARNING: Not Found: /community/ppompu
+2018-09-09 09:54:15,059 WARNING: Not Found: /community/ppompu/page=1&divpage=19
+2018-09-09 09:57:12,188 WARNING: Not Found: /community/ppompu/page=1
+2018-09-09 09:57:19,247 WARNING: Not Found: /community/ppompu&page=1
+2018-09-09 15:01:55,517 WARNING: Not Found: /favicon.ico
+2018-09-09 15:01:59,809 WARNING: Not Found: /community/ppompu
+2018-09-09 15:02:08,881 WARNING: Not Found: /community/ppompu/page=1/divpage=19
+2018-09-09 15:02:21,887 WARNING: Not Found: /community/ppompu/page=1/divpage=19/
+2018-09-09 15:03:56,580 WARNING: Not Found: /community/ppompu/page=1
+2018-09-09 15:03:59,920 WARNING: Not Found: /community/ppompu/page
+2018-09-09 15:04:02,698 WARNING: Not Found: /community/ppompu/
+2018-09-09 15:05:36,628 WARNING: Not Found: /community/ppompu/
+2018-09-09 15:05:41,892 WARNING: Not Found: /community/ppompu
+2018-09-09 15:08:29,094 WARNING: Not Found: /community/ppompu
+2018-09-09 15:08:32,443 WARNING: Not Found: /community/ppompu/page=1
+2018-09-09 15:08:40,865 WARNING: Not Found: /community/ppompu
+2018-09-09 15:10:34,782 WARNING: Not Found: /community/ppompu
+2018-09-09 15:10:38,844 WARNING: Not Found: /community/ppompu/page=1

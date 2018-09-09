@@ -6,10 +6,11 @@ import sys
 
 class BitCoinCrawler:
 
-    def __init__(self, markup='html.parser', timeout=5):
+    def __init__(self, page=1, markup='html.parser', timeout=5):
         self.logger = logging.getLogger(__name__)
         self.__requests = requests.session()
         self.__markup = markup
+        self.__page = page
         self.__timeout = timeout
         self.__url = "https://gall.dcinside.com/board/lists/"
 
@@ -26,7 +27,7 @@ class BitCoinCrawler:
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
 
         }
-        parameter = {'id': gall_id, 'page': page}
+        parameter = {'id': gall_id, 'page': self.__page}
         url = self.__url
         packet_map = {
             'header': header,
