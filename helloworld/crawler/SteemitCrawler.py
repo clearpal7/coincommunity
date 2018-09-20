@@ -6,12 +6,12 @@ from bs4 import BeautifulSoup
 
 class SteemitCrawler:
 
-    def __init__(self, page=0, params=[], markup='html.parser', timeout=5):
+    def __init__(self, json_data, markup='html.parser', timeout=5):
         self.__requests = requests.session()
         self.__markup = markup
         self.__timeout = timeout
-        self.__page = page
-        self.__params = params
+        self.__json_data = json_data
+        self.__page = 0
         self.__url = "https://api.steemit.com/"
 
     def set_init(self):
@@ -25,10 +25,12 @@ class SteemitCrawler:
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36',
         }
 
-        if not self.__params:
-            self.__params = ["database_api", "get_state", ["/trending/coinkorea"]]
+        id = self.__json_data['id']
+        jsonrpc = self.__json_data['jsonrpc']
+        method = self.__json_data['method']
+        params = self.__json_data['params']
 
-        parameter = {'id': self.__page, 'jsonrpc': "2.0", 'method': "call", "params": self.__params}
+        parameter = {'id': id, 'jsonrpc': jsonrpc, 'method': method, "params": params}
         url = self.__url
         packet_map = {
             'header': header,

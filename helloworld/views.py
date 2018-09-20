@@ -9,8 +9,10 @@ from helloworld.crawler.DdengleCrawler import DdengleCrawler
 from helloworld.crawler.PpompuCrawler import PpompuCrawler
 from helloworld.crawler.CoinTalkCrawler import CoinTalkCrawler
 from helloworld.crawler.SteemitCrawler import SteemitCrawler
+from django.views.decorators.csrf import csrf_exempt
 
 from helloworld.robots import robots
+import json
 
 
 # Create your views here.
@@ -70,14 +72,12 @@ def ddengle_list(request):
     return JsonResponse(result, safe=False)
 
 
+@csrf_exempt
 def steemit_list(request):
     #API호출
-    page = request.GET.get('page')
-    if page is None:
-        page = 0
-    params = request.GET.get('params')
+    json_data = json.loads(request.body)
 
-    crawler = SteemitCrawler(page, params)
+    crawler = SteemitCrawler(json_data)
     raw_json = crawler.post()
     result = crawler.result_parser(raw_json)
     print(JsonResponse(result, safe=False))
