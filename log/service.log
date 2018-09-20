@@ -338,3 +338,79 @@ TypeError: __init__() missing 2 required positional arguments: 'page' and 'size'
 2018-09-09 15:08:40,865 WARNING: Not Found: /community/ppompu
 2018-09-09 15:10:34,782 WARNING: Not Found: /community/ppompu
 2018-09-09 15:10:38,844 WARNING: Not Found: /community/ppompu/page=1
+2018-09-20 23:45:05,030 WARNING: Not Found: /favicon.ico
+2018-09-21 00:18:09,856 ERROR: Internal Server Error: /community/dcInside
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/views.py", line 49, in dc_inside_list
+    result = crawler.result_parser(raw_html)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/crawler/BitCoinCrawler.py", line 64, in result_parser
+    url = dcinside_main_url + shortUrl
+TypeError: must be str, not NoneType
+2018-09-21 00:19:27,420 ERROR: Internal Server Error: /community/dcInside
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/views.py", line 49, in dc_inside_list
+    result = crawler.result_parser(raw_html)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/crawler/BitCoinCrawler.py", line 64, in result_parser
+    url = dcinside_main_url + shortUrl
+TypeError: must be str, not NoneType
+2018-09-21 00:25:57,154 ERROR: Internal Server Error: /community/dcInside
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/views.py", line 49, in dc_inside_list
+    result = crawler.result_parser(raw_html)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/crawler/BitCoinCrawler.py", line 64, in result_parser
+    url = dcinside_main_url + shortUrl
+TypeError: must be str, not NoneType
+2018-09-21 00:28:58,637 ERROR: Internal Server Error: /community/dcInside
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/views.py", line 49, in dc_inside_list
+    result = crawler.result_parser(raw_html)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/crawler/BitCoinCrawler.py", line 64, in result_parser
+    url = dcinside_main_url + shortUrl
+TypeError: must be str, not NoneType
+2018-09-21 00:37:14,372 ERROR: Internal Server Error: /community/dcInside
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/views.py", line 49, in dc_inside_list
+    result = crawler.result_parser(raw_html)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/crawler/BitCoinCrawler.py", line 64, in result_parser
+    url = dcinside_main_url + shortUrl
+TypeError: must be str, not NoneType

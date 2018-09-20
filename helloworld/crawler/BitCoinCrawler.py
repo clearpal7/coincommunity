@@ -56,11 +56,12 @@ class BitCoinCrawler:
         result = []
         dcinside_main_url = "gall.dcinside.com/"
         bsObj = BeautifulSoup(raw_html, self.__markup)
-        dcCardList = bsObj.select('tbody > tr > td.t_subject > a.icon_txt_n')
+        dcCardList = bsObj.select('div.gall_listwrap.list > table > tbody > tr')
 
         for card in dcCardList:
             title = card.text
-            shortUrl = card.get('href')
+            #shortUrl = card.get('href')
+            shortUrl = card.find('a').attrs.get('href')
             url = dcinside_main_url + shortUrl
             temp_dict = {"community_name": "dcInside", "title": title,
                          "url": url}
