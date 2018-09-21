@@ -65,8 +65,12 @@ class SteemitCrawler:
 
             title = card.get('title')
             short_url = card.get('url')
+            author = card.get('root_author')
+            permlink = card.get('root_permlink')
+            creadted_date = card.get('created')
+
             url = steemit_main_url + short_url
-            temp_dict = {"community_name": 'steemit', 'title': title, 'url': url}
+            temp_dict = {"community_name": 'steemit', 'title': title, 'url': url, 'author': author, 'permlink': permlink, 'created_date': creadted_date}
             result.append(temp_dict)
 
         return result
