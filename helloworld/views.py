@@ -76,12 +76,17 @@ def ddengle_list(request):
 def steemit_list(request):
     #API호출
     json_data = json.loads(request.body)
+    id = json_data['id']
 
     crawler = SteemitCrawler(json_data)
     raw_json = crawler.post()
-    result = crawler.result_parser(raw_json)
-    print(JsonResponse(result, safe=False))
 
+    if id == 0:
+        result = crawler.parse_when_page_is_zero(raw_json)
+    else:
+        result = crawler.parse_page_is_not_zero(raw_json)
+
+    print(JsonResponse(result, safe=False))
     return JsonResponse(result, safe=False)
 
 

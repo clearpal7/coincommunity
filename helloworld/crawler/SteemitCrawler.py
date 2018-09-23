@@ -54,7 +54,7 @@ class SteemitCrawler:
 
         return response.json()
 
-    def result_parser(self, raw_json):
+    def parse_when_page_is_zero(self, raw_json):
         result = []
         steemit_main_url = "https://steemit.com"
         content_dict = raw_json.get('result').get('content')
@@ -71,6 +71,26 @@ class SteemitCrawler:
 
             url = steemit_main_url + short_url
             temp_dict = {"community_name": 'steemit', 'title': title, 'url': url, 'author': author, 'permlink': permlink, 'created_date': creadted_date}
+            result.append(temp_dict)
+
+        return result
+
+    def parse_page_is_not_zero(self, raw_json):
+        result = []
+        steemit_main_url = "https://steemit.com"
+        content_dict = raw_json.get('result')
+
+        for card in content_dict:
+
+            title = card.get('title')
+            short_url = card.get('url')
+            author = card.get('root_author')
+            permlink = card.get('root_permlink')
+            creadted_date = card.get('created')
+
+            url = steemit_main_url + short_url
+            temp_dict = {"community_name": 'steemit', 'title': title, 'url': url, 'author': author,
+                         'permlink': permlink, 'created_date': creadted_date}
             result.append(temp_dict)
 
         return result
