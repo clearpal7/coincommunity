@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e105804d-d627-4e58-8b52-2505249fbdc4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helloworld/crawler/SteemitCrawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/helloworld/crawler/SteemitCrawler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helloworld/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/helloworld/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helloworld/crawler/BitCoinCrawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/helloworld/crawler/BitCoinCrawler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/service.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/service.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SteemitCrawler.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SteemitCrawler.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/helloworld/crawler/SteemitCrawler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="77" column="37" selection-start-line="77" selection-start-column="37" selection-end-line="77" selection-end-column="37" />
+            <state relative-caret-position="322">
+              <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
             </state>
           </provider>
         </entry>
@@ -31,8 +29,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/helloworld/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="84" selection-start-line="84" selection-end-line="84" />
+            <state relative-caret-position="873">
+              <caret line="86" column="27" lean-forward="true" selection-start-line="86" selection-start-column="27" selection-end-line="86" selection-end-column="27" />
               <folding>
                 <element signature="e#1#36#0" expanded="true" />
               </folding>
@@ -49,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BitCoinCrawler.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BitCoinCrawler.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/helloworld/crawler/BitCoinCrawler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="885">
-              <caret line="62" column="40" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
+            <state relative-caret-position="205">
+              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
             </state>
           </provider>
         </entry>
@@ -97,9 +95,9 @@
         <option value="$PROJECT_DIR$/helloworld/crawler/CoinTalkCrawler.py" />
         <option value="$PROJECT_DIR$/helloworld/crawler/PpompuCrawler.py" />
         <option value="$PROJECT_DIR$/helloworld/crawler/CoinPannCrawler.py" />
-        <option value="$PROJECT_DIR$/helloworld/crawler/BitCoinCrawler.py" />
         <option value="$PROJECT_DIR$/helloworld/views.py" />
         <option value="$PROJECT_DIR$/helloworld/crawler/SteemitCrawler.py" />
+        <option value="$PROJECT_DIR$/helloworld/crawler/BitCoinCrawler.py" />
       </list>
     </option>
   </component>
@@ -312,14 +310,14 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3292517" />
       <window_info anchor="right" id="R Packages" order="6" />
       <window_info anchor="right" id="R Graphics" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.16595136" side_tool="true" visible="true" weight="0.393531" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.16666667" side_tool="true" visible="true" weight="0.45687333" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32882273" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.79756796" weight="0.2774019" />
       <window_info id="Structure" order="1" sideWeight="0.5010142" side_tool="true" weight="0.15379113" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.8304721" weight="0.21980414" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.8297568" weight="0.22506739" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.8340486" visible="true" weight="0.393531" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.8333333" visible="true" weight="0.45687333" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -343,63 +341,58 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/helloworld/crawler/SteemitCrawler.py</url>
-          <line>59</line>
-          <option name="timeStamp" value="88" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/helloworld/views.py</url>
           <line>84</line>
           <option name="timeStamp" value="89" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="90" />
+      <option name="time" value="95" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>content_dict</expression-string>
+        <expression-string>card.find('td', class_=&quot;gall_date&quot;).contents[0]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>content_dict[0]</expression-string>
+        <expression-string>card.find('td', class_=&quot;gall_date&quot;).contents</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>content_dict.keys()</expression-string>
+        <expression-string>card.find('td', class_=&quot;gall_date&quot;)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>card.find('a').attrs.get('href')</expression-string>
+        <expression-string>card.find_all('td', class_=&quot;gall_date&quot;)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>card.find('a').attrs</expression-string>
+        <expression-string>card.find_all('td', class=&quot;gall_date&quot;)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>card.find('a')</expression-string>
+        <expression-string>card.find_all('td', id=&quot;gall_date&quot;)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>card.find('href')</expression-string>
+        <expression-string>card.find_all('td')</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>card.find('a href')</expression-string>
+        <expression-string>card.find('td').contents</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>card.get_text</expression-string>
+        <expression-string>card.find('td')</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -694,13 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/helloworld/crawler/BitCoinCrawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="62" column="40" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/helloworld/crawler/PpompuCrawler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -722,20 +708,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/helloworld/crawler/SteemitCrawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/helloworld/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        <state relative-caret-position="873">
+          <caret line="86" column="27" lean-forward="true" selection-start-line="86" selection-start-column="27" selection-end-line="86" selection-end-column="27" />
           <folding>
             <element signature="e#1#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/helloworld/crawler/SteemitCrawler.py">
+    <entry file="file://$PROJECT_DIR$/helloworld/crawler/BitCoinCrawler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="77" column="37" selection-start-line="77" selection-start-column="37" selection-end-line="77" selection-end-column="37" />
+        <state relative-caret-position="205">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
         </state>
       </provider>
     </entry>

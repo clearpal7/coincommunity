@@ -635,3 +635,28 @@ Traceback (most recent call last):
   File "/Users/user/PycharmProjects/coincommunity/helloworld/views.py", line 85, in steemit_list
     result = crawler.parse_when_page_is_zero(raw_json)
 TypeError: parse_when_page_is_zero() takes 1 positional argument but 2 were given
+2018-09-23 17:58:09,808 ERROR: Internal Server Error: /community/dcInside
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/views.py", line 53, in dc_inside_list
+    return JsonResponse(result, safe=False)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/http/response.py", line 530, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/serializers/json.py", line 124, in default
+    return super(DjangoJSONEncoder, self).default(o)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'Tag' is not JSON serializable
