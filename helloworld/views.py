@@ -29,14 +29,18 @@ def coin_pann_list(request):
 
     bsObj = BeautifulSoup(raw_html, 'html.parser')
     coinPannList = bsObj.select('table > tbody > tr > td.title > a:nth-of-type(1)')
+    coin_pann_list_time = bsObj.select('table > tbody > tr > td.time')
     result = []
 
+    index = 5
     for coinPann in coinPannList[5:]:
         title_with_EOL = coinPann.text
         title = title_with_EOL.replace("  ", "").replace("\n","")
-
         url = coinPann.get('href')
-        temp_dict = {"community_name": type, "title": title, "url": url}
+        if index < coin_pann_list_time.__len__():
+            created_dated = coin_pann_list_time[index].find('span', class_="regdateHour").text
+            index += 1
+        temp_dict = {"community_name": type, "title": title, "url": url, "created_date": created_dated}
         result.append(temp_dict)
 
     return JsonResponse(result, safe=False)
