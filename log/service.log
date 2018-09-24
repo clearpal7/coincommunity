@@ -694,3 +694,48 @@ Traceback (most recent call last):
   File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/bs4/element.py", line 1451, in select
     'Only the following pseudo-classes are implemented: nth-of-type.')
 NotImplementedError: Only the following pseudo-classes are implemented: nth-of-type.
+2018-09-24 20:13:31,182 ERROR: Internal Server Error: /community/ppompu
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/views.py", line 103, in ppompu_list
+    result = crawler.result_parser(raw_html)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/crawler/PpompuCrawler.py", line 50, in result_parser
+    created_date = contents[i].find_all("td", {"class":"eng list_vspace"})[4]
+IndexError: list index out of range
+2018-09-24 20:13:43,715 ERROR: Internal Server Error: /community/ppompu
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/views.py", line 103, in ppompu_list
+    result = crawler.result_parser(raw_html)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/crawler/PpompuCrawler.py", line 50, in result_parser
+    created_date = contents[i].find_all("td", {"class":"eng list_vspace"})[4]
+IndexError: list index out of range
+2018-09-24 20:13:51,235 ERROR: Internal Server Error: /community/ppompu
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/views.py", line 103, in ppompu_list
+    result = crawler.result_parser(raw_html)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/crawler/PpompuCrawler.py", line 50, in result_parser
+    created_date = contents[i].find_all("td", {"class":"eng list_vspace"})[4]
+IndexError: list index out of range

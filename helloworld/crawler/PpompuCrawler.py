@@ -47,10 +47,11 @@ class PpompuCrawler:
             if contents[i].find("td", {"class": "list_vspace"}):
                 #첫번째(0번쨰인덱스)는 유저의 닉네임을 가리킴으로 제외
                 main_content = contents[i].find_all("td", {"class": "list_vspace"})[3]
+                created_date = contents[i].find_all("td", {"class": "eng list_vspace"})[1].text
                 main_content_url = main_content.find("a").attrs['href']
                 main_content_title = main_content.find("font").get_text()
 
-                temp_dict = {"community_name": "Ppompu", "title": main_content_title, "url": main_content_url}
+                temp_dict = {"community_name": "Ppompu", "title": main_content_title, "url": main_content_url, "created_date": created_date}
                 logging.debug("Ppompu: %s", temp_dict)
                 result.append(temp_dict)
 
