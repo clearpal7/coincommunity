@@ -44,10 +44,22 @@ class CoinTalkCrawler:
         result = []
         bsObj = BeautifulSoup(raw_html, self.__markup)
         coinTalkList = bsObj.select('table > tbody > tr > td.sbj > a')
+        coinTalkListDate = bsObj.select('table > tbody > tr > td:nth-of-type(7)')
 
         for card in coinTalkList:
             title = card.text
             url = card.get('href')
             temp_dict = {'community_name': 'coinTalk', 'title': title, 'url': url}
             result.append(temp_dict)
+
+        self.add_date_field_in_cointalk_map(coinTalkListDate, result)
+
         return result
+
+    def add_date_field_in_cointalk_map(self, coinTalkListDate, result):
+        index = 0
+        for card_date in coinTalkListDate:
+            card_dict = result[index]
+            card_dict['created_date'] = card_date.text
+            result[index] = card_dict
+            index += 1

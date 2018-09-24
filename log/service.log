@@ -673,3 +673,24 @@ Traceback (most recent call last):
   File "/Users/user/PycharmProjects/coincommunity/helloworld/views.py", line 40, in coin_pann_list
     created_dated = coin_pann_list_time[index].find('span', class_="regdateHour").text
 IndexError: list index out of range
+2018-09-24 18:47:12,209 ERROR: Internal Server Error: /community/cointalk
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/views.py", line 65, in coin_talk_list
+    result = crawler.result_parser2(raw_html)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/crawler/CoinTalkCrawler.py", line 59, in result_parser2
+    coinTalkList = bsObj.select('table > tbody > tr > td:nth-child(7)')
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/bs4/element.py", line 1532, in select
+    for candidate in _use_candidate_generator(tag):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/bs4/element.py", line 1493, in recursive_select
+    for i in tag.select(next_token, recursive_candidate_generator):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/bs4/element.py", line 1451, in select
+    'Only the following pseudo-classes are implemented: nth-of-type.')
+NotImplementedError: Only the following pseudo-classes are implemented: nth-of-type.
