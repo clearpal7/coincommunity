@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e105804d-d627-4e58-8b52-2505249fbdc4" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/service.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/service.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -76,8 +77,8 @@
       <file leaf-file-name="BitCoinCrawler.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/helloworld/crawler/BitCoinCrawler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="64" column="23" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
+            <state relative-caret-position="377">
+              <caret line="72" column="36" lean-forward="true" selection-start-line="72" selection-start-column="36" selection-end-line="72" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -337,13 +338,13 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3292517" />
       <window_info anchor="right" id="R Packages" order="6" />
       <window_info anchor="right" id="R Graphics" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.17101273" side_tool="true" visible="true" weight="0.36150235" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.1722256" side_tool="true" visible="true" weight="0.36150235" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.79756796" weight="0.2774019" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32882273" />
       <window_info id="Structure" order="1" sideWeight="0.5010142" side_tool="true" weight="0.15379113" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.82546496" weight="0.21650879" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.82898724" visible="true" weight="0.36150235" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.82413584" weight="0.21596244" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.8277744" visible="true" weight="0.36150235" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
@@ -373,11 +374,31 @@
           <option name="timeStamp" value="89" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="103" />
+      <option name="time" value="105" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>card.find('span', class_=&quot;reply_num&quot;).text</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>card.find('span', class_=&quot;reply_num&quot;)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>card</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>card.</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>card.find('a').text</expression-string>
         <language-id>Python</language-id>
@@ -400,26 +421,6 @@
       </expression>
       <expression>
         <expression-string>contents[i].find_all(&quot;td&quot;, {&quot;class&quot;: &quot;eng list_vspace&quot;})[1]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>contents[i].find_all(&quot;td&quot;, {&quot;class&quot;: &quot;eng list_vspace&quot;})[1].title</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>contents[i].find_all(&quot;td&quot;, {&quot;class&quot;: &quot;eng list_vspace&quot;})[0]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>card_date.text</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>coin_pann_list_time[5].find('span', class_=&quot;regdateHour&quot;).text</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
@@ -806,8 +807,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/helloworld/crawler/BitCoinCrawler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="64" column="23" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
+        <state relative-caret-position="377">
+          <caret line="72" column="36" lean-forward="true" selection-start-line="72" selection-start-column="36" selection-end-line="72" selection-end-column="36" />
         </state>
       </provider>
     </entry>
