@@ -64,7 +64,7 @@ class BitCoinCrawler:
                 index += 1
                 continue
 
-            title = card.text
+            title = card.find('a').text
             short_url = card.find('a').attrs.get('href')
             created_date = card.find('td', class_="gall_date").contents[0]
             url = dcinside_main_url + short_url

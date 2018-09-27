@@ -739,3 +739,18 @@ Traceback (most recent call last):
   File "/Users/user/PycharmProjects/coincommunity/helloworld/crawler/PpompuCrawler.py", line 50, in result_parser
     created_date = contents[i].find_all("td", {"class":"eng list_vspace"})[4]
 IndexError: list index out of range
+2018-09-27 21:38:19,186 ERROR: Internal Server Error: /community/dcInside
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/views.py", line 55, in dc_inside_list
+    result = crawler.result_parser(raw_html)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/crawler/BitCoinCrawler.py", line 67, in result_parser
+    title = card.get('a').text
+AttributeError: 'NoneType' object has no attribute 'text'
