@@ -1,0 +1,4 @@
+#!/Users/user/PycharmProjects/coincommunity/.venv/bin/python
+# EASY-INSTALL-SCRIPT: 'clarifai==2.4.0','clarifai'
+__requires__ = 'clarifai==2.4.0'
+__import__('pkg_resources').run_script('clarifai==2.4.0', 'clarifai')

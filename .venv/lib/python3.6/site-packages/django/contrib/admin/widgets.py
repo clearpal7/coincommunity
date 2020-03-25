@@ -7,6 +7,7 @@ import copy
 
 from django import forms
 from django.core.exceptions import ValidationError
+from django.core.validators import URLValidator
 from django.db.models.deletion import CASCADE
 from django.urls import reverse
 from django.urls.exceptions import NoReverseMatch
@@ -148,9 +149,7 @@ class ForeignKeyRawIdWidget(forms.TextInput):
 
             params = self.url_parameters()
             if params:
-                related_url += '?' + '&amp;'.join(
-                    '%s=%s' % (k, v) for k, v in params.items(),
-                )
+                related_url += '?' + '&amp;'.join('%s=%s' % (k, v) for k, v in params.items())
             context['related_url'] = mark_safe(related_url)
             context['link_title'] = _('Lookup')
             # The JavaScript code looks for this class.
@@ -341,17 +340,24 @@ class AdminEmailInputWidget(forms.EmailInput):
 class AdminURLFieldWidget(forms.URLInput):
     template_name = 'admin/widgets/url.html'
 
-    def __init__(self, attrs=None):
+    def __init__(self, attrs=None, validator_class=URLValidator):
         final_attrs = {'class': 'vURLField'}
         if attrs is not None:
             final_attrs.update(attrs)
         super(AdminURLFieldWidget, self).__init__(attrs=final_attrs)
+        self.validator = validator_class()
 
     def get_context(self, name, value, attrs):
+        try:
+            self.validator(value if value else '')
+            url_valid = True
+        except ValidationError:
+            url_valid = False
         context = super(AdminURLFieldWidget, self).get_context(name, value, attrs)
         context['current_label'] = _('Currently:')
         context['change_label'] = _('Change:')
         context['widget']['href'] = smart_urlquote(context['widget']['value']) if value else ''
+        context['url_valid'] = url_valid
         return context
 
 

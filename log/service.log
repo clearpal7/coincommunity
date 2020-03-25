@@ -769,3 +769,635 @@ Traceback (most recent call last):
   File "/Users/user/PycharmProjects/coincommunity/helloworld/crawler/BitCoinCrawler.py", line 68, in result_parser
     reply_num = card.find('span', class_="reply_num").text
 AttributeError: 'NoneType' object has no attribute 'text'
+2018-10-27 03:14:23,446 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/controller/lost_views.py", line 8, in inven
+    data = invenCrawler(request, 1)
+TypeError: 'module' object is not callable
+2018-10-27 03:16:02,098 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/controller/lost_views.py", line 8, in inven
+    data = invenCrawler(request)
+TypeError: 'module' object is not callable
+2018-10-27 03:18:50,646 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/controller/lost_views.py", line 8, in inven
+    data = invenCrawler(request)
+TypeError: 'module' object is not callable
+2018-10-27 03:20:13,257 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/controller/lost_views.py", line 9, in inven
+    card_list = data.get_cards() or []
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/crawler/invenCrawler.py", line 15, in get_cards
+    self.url = self.url + '?' + 'sort=' + self.sort + '&' + 'p=' + self.pages
+TypeError: must be str, not int
+2018-10-27 03:21:25,894 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/controller/lost_views.py", line 9, in inven
+    card_list = data.get_cards() or []
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/crawler/invenCrawler.py", line 32, in get_cards
+    r = self.session.request(self.url, header, parameter)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/requests/sessions.py", line 612, in send
+    adapter = self.get_adapter(url=request.url)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/requests/sessions.py", line 703, in get_adapter
+    raise InvalidSchema("No connection adapters were found for '%s'" % url)
+requests.exceptions.InvalidSchema: No connection adapters were found for '{'GET': '/board/lostark/4811?sort=PID&p=1 HTTP/1.1', 'Host': 'www.inven.co.kr', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36(KHTML, like Gecko) Chrome/69.0.3497.100', 'Referer': 'http://www.inven.co.kr/board/lostark/4811/49415?p=3', 'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7', 'Cookie': 'MOBILE_V3=NONE; _ga=GA1.3.523518917.1533643341; dable_uid=77276589.1503212548089; VISIT_SITE=lostark%7Clol%7Cesports; inven_link=stream; _gid=GA1.3.1489609002.1540572446; invenrchk=%7B%224811%7C49496%22%3A%7B%22d%22%3A%222018-10-27+01%3A52%3A38%22%2C%22s%22%3Anull%7D%2C%224811%7C49421%22%3A%7B%22d%22%3A%222018-10-27+02%3A21%3A54%22%2C%22s%22%3Anull%7D%2C%224811%7C49415%22%3A%7B%22d%22%3A%222018-10-27+02%3A22%3A01%22%2C%22s%22%3Anull%7D%7D'}'
+2018-10-27 03:24:56,742 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/controller/lost_views.py", line 9, in inven
+    card_list = data.get_cards() or []
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/crawler/invenCrawler.py", line 33, in get_cards
+    r = self.session.request(self.url, header, parameter)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/requests/sessions.py", line 612, in send
+    adapter = self.get_adapter(url=request.url)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/requests/sessions.py", line 703, in get_adapter
+    raise InvalidSchema("No connection adapters were found for '%s'" % url)
+requests.exceptions.InvalidSchema: No connection adapters were found for '{'GET': '/board/lostark/4811?sort=PID&p=1 HTTP/1.1', 'Host': 'www.inven.co.kr', 'Connection': 'keep-alive', 'Cache-Control': 'max-age=0', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36(KHTML, like Gecko) Chrome/69.0.3497.100', 'Referer': 'http://www.inven.co.kr/board/lostark/4811/49415?p=3', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8', 'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7', 'Cookie': 'MOBILE_V3=NONE; _ga=GA1.3.523518917.1533643341; dable_uid=77276589.1503212548089; VISIT_SITE=lostark%7Clol%7Cesports; inven_link=stream; _gid=GA1.3.1489609002.1540572446; invenrchk=%7B%224811%7C49496%22%3A%7B%22d%22%3A%222018-10-27+01%3A52%3A38%22%2C%22s%22%3Anull%7D%2C%224811%7C49421%22%3A%7B%22d%22%3A%222018-10-27+02%3A21%3A54%22%2C%22s%22%3Anull%7D%2C%224811%7C49415%22%3A%7B%22d%22%3A%222018-10-27+02%3A22%3A01%22%2C%22s%22%3Anull%7D%7D'}'
+2018-10-27 03:26:29,487 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/controller/lost_views.py", line 9, in inven
+    card_list = data.get_cards() or []
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/crawler/invenCrawler.py", line 33, in get_cards
+    r = self.session.request(self.url, params=parameter, headers=header)
+TypeError: request() missing 1 required positional argument: 'url'
+2018-10-27 03:28:44,136 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/controller/lost_views.py", line 9, in inven
+    card_list = data.get_cards() or []
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/crawler/invenCrawler.py", line 32, in get_cards
+    r = self.session.request(self.url, params=parameter, headers=header)
+TypeError: request() missing 1 required positional argument: 'url'
+2018-10-27 03:30:04,454 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view helloworld.lostark.controller.lost_views.inven didn't return an HttpResponse object. It returned None instead.
+2018-10-27 03:41:10,694 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/controller/lost_views.py", line 9, in inven
+    card_list = data.get_cards() or []
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/crawler/invenCrawler.py", line 34, in get_cards
+    return self.__parse_html(r)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/crawler/invenCrawler.py", line 38, in __parse_html
+    bsObj = BeautifulSoup(raw_data, 'html.parser')
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/bs4/__init__.py", line 192, in __init__
+    elif len(markup) <= 256 and (
+TypeError: object of type 'Response' has no len()
+2018-10-27 03:42:02,789 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/controller/lost_views.py", line 9, in inven
+    card_list = data.get_cards() or []
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/crawler/invenCrawler.py", line 34, in get_cards
+    return self.__parse_html(r)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/crawler/invenCrawler.py", line 38, in __parse_html
+    bsObj = BeautifulSoup(raw_data, 'html.parser')
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/bs4/__init__.py", line 192, in __init__
+    elif len(markup) <= 256 and (
+TypeError: object of type 'Response' has no len()
+2018-10-27 03:44:11,478 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/controller/lost_views.py", line 9, in inven
+    card_list = data.get_cards() or []
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/crawler/invenCrawler.py", line 34, in get_cards
+    return self.__parse_html(r.text)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/crawler/invenCrawler.py", line 39, in __parse_html
+    inven_list = bsObj.select('table > tbody> tr > td > div > table > tbody > td.bbsSubject')
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/bs4/element.py", line 1532, in select
+    for candidate in _use_candidate_generator(tag):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/bs4/element.py", line 1493, in recursive_select
+    for i in tag.select(next_token, recursive_candidate_generator):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/bs4/element.py", line 1477, in select
+    'Unsupported or invalid CSS selector: "%s"' % token)
+ValueError: Unsupported or invalid CSS selector: "tbody>"
+2018-10-27 03:45:18,342 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view helloworld.lostark.controller.lost_views.inven didn't return an HttpResponse object. It returned None instead.
+2018-10-27 03:46:25,843 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view helloworld.lostark.controller.lost_views.inven didn't return an HttpResponse object. It returned None instead.
+2018-10-27 03:51:27,511 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view helloworld.lostark.controller.lost_views.inven didn't return an HttpResponse object. It returned None instead.
+2018-10-27 03:54:37,728 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view helloworld.lostark.controller.lost_views.inven didn't return an HttpResponse object. It returned None instead.
+2018-10-27 03:59:12,327 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view helloworld.lostark.controller.lost_views.inven didn't return an HttpResponse object. It returned None instead.
+2018-10-27 04:03:54,976 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view helloworld.lostark.controller.lost_views.inven didn't return an HttpResponse object. It returned None instead.
+2018-10-27 04:05:05,047 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view helloworld.lostark.controller.lost_views.inven didn't return an HttpResponse object. It returned None instead.
+2018-10-27 04:05:40,568 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view helloworld.lostark.controller.lost_views.inven didn't return an HttpResponse object. It returned None instead.
+2018-10-27 04:06:42,958 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view helloworld.lostark.controller.lost_views.inven didn't return an HttpResponse object. It returned None instead.
+2018-10-27 04:45:12,124 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view helloworld.lostark.controller.lost_views.inven didn't return an HttpResponse object. It returned None instead.
+2018-10-27 04:47:17,955 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view helloworld.lostark.controller.lost_views.inven didn't return an HttpResponse object. It returned None instead.
+2018-10-27 04:50:00,465 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view helloworld.lostark.controller.lost_views.inven didn't return an HttpResponse object. It returned None instead.
+2018-10-27 04:50:35,644 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view helloworld.lostark.controller.lost_views.inven didn't return an HttpResponse object. It returned None instead.
+2018-10-27 04:50:54,350 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view helloworld.lostark.controller.lost_views.inven didn't return an HttpResponse object. It returned None instead.
+2018-10-27 04:56:09,611 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view helloworld.lostark.controller.lost_views.inven didn't return an HttpResponse object. It returned None instead.
+2018-10-27 04:57:52,693 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view helloworld.lostark.controller.lost_views.inven didn't return an HttpResponse object. It returned None instead.
+2018-10-27 04:57:58,881 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view helloworld.lostark.controller.lost_views.inven didn't return an HttpResponse object. It returned None instead.
+2018-10-27 04:58:36,750 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view helloworld.lostark.controller.lost_views.inven didn't return an HttpResponse object. It returned None instead.
+2018-10-27 04:58:52,649 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view helloworld.lostark.controller.lost_views.inven didn't return an HttpResponse object. It returned None instead.
+2018-10-27 04:59:19,249 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view helloworld.lostark.controller.lost_views.inven didn't return an HttpResponse object. It returned None instead.
+2018-10-27 05:02:48,057 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view helloworld.lostark.controller.lost_views.inven didn't return an HttpResponse object. It returned None instead.
+2018-10-27 05:03:31,907 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view helloworld.lostark.controller.lost_views.inven didn't return an HttpResponse object. It returned None instead.
+2018-10-27 05:06:31,793 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view helloworld.lostark.controller.lost_views.inven didn't return an HttpResponse object. It returned None instead.
+2018-10-27 05:12:34,716 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view helloworld.lostark.controller.lost_views.inven didn't return an HttpResponse object. It returned None instead.
+2018-10-27 05:16:36,621 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/controller/lost_views.py", line 9, in inven
+    card_list = data.get_cards() or []
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/crawler/invenCrawler.py", line 34, in get_cards
+    return self.__parse_html(r.text)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/crawler/invenCrawler.py", line 43, in __parse_html
+    subject = card.find('td', class_='bbsSubject').text
+AttributeError: 'NoneType' object has no attribute 'text'
+2018-10-27 05:19:23,352 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view helloworld.lostark.controller.lost_views.inven didn't return an HttpResponse object. It returned None instead.
+2018-10-27 05:26:23,540 ERROR: Internal Server Error: /community/lostark/inven
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view helloworld.lostark.controller.lost_views.inven didn't return an HttpResponse object. It returned None instead.
+2018-10-27 16:31:52,306 ERROR: Internal Server Error: /community/lostark/dcinside
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/controller/lost_views.py", line 23, in dcinside
+    card_list = data.get_cards() or []
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/crawler/dcinsideCrawler.py", line 29, in get_cards
+    return self.__parse_html(r)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/crawler/dcinsideCrawler.py", line 34, in __parse_html
+    bsObj = BeautifulSoup(raw_data, 'html.parser')
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/bs4/__init__.py", line 192, in __init__
+    elif len(markup) <= 256 and (
+TypeError: object of type 'Response' has no len()
+2018-10-27 16:32:24,178 ERROR: Internal Server Error: /community/lostark/dcinside
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/controller/lost_views.py", line 23, in dcinside
+    card_list = data.get_cards() or []
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/crawler/dcinsideCrawler.py", line 29, in get_cards
+    return self.__parse_html(r)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/crawler/dcinsideCrawler.py", line 34, in __parse_html
+    bsObj = BeautifulSoup(raw_data, 'html.parser')
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/bs4/__init__.py", line 192, in __init__
+    elif len(markup) <= 256 and (
+TypeError: object of type 'Response' has no len()
+2018-10-27 16:33:13,458 ERROR: Internal Server Error: /community/lostark/dcinside
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/controller/lost_views.py", line 25, in dcinside
+    return JsonResponse(card_list, self=True)
+TypeError: __init__() got multiple values for argument 'self'
+2018-10-27 16:34:06,118 ERROR: Internal Server Error: /community/lostark/dcinside
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/controller/lost_views.py", line 25, in dcinside
+    return JsonResponse(card_list, self=True)
+TypeError: __init__() got multiple values for argument 'self'
+2018-10-27 16:34:20,881 ERROR: Internal Server Error: /community/lostark/dcinside
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/controller/lost_views.py", line 25, in dcinside
+    return JsonResponse(card_list, self=True)
+TypeError: __init__() got multiple values for argument 'self'
+2018-10-27 16:34:27,613 ERROR: Internal Server Error: /community/lostark/dcinside
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/controller/lost_views.py", line 25, in dcinside
+    return JsonResponse(card_list, self=True)
+TypeError: __init__() got multiple values for argument 'self'
+2018-10-27 16:35:23,834 ERROR: Internal Server Error: /community/lostark/dcinside
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/controller/lost_views.py", line 25, in dcinside
+    return JsonResponse(card_list, self=True)
+TypeError: __init__() got multiple values for argument 'self'
+2018-10-27 16:36:04,106 ERROR: Internal Server Error: /community/lostark/dcinside
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/controller/lost_views.py", line 25, in dcinside
+    return JsonResponse(card_list, self=True)
+TypeError: __init__() got multiple values for argument 'self'
+2018-10-27 16:37:49,661 ERROR: Internal Server Error: /community/lostark/dcinside
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/controller/lost_views.py", line 25, in dcinside
+    return JsonResponse(card_list, self=True)
+TypeError: __init__() got multiple values for argument 'self'
+2018-10-27 16:39:19,964 ERROR: Internal Server Error: /community/lostark/dcinside
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/controller/lost_views.py", line 25, in dcinside
+    return JsonResponse(card_list, self=False)
+TypeError: __init__() got multiple values for argument 'self'
+2018-10-27 16:44:45,097 ERROR: Internal Server Error: /community/lostark/dcinside
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/controller/lost_views.py", line 24, in dcinside
+    return JsonResponse(card_list, self=False)
+TypeError: __init__() got multiple values for argument 'self'
+2018-10-27 16:48:04,237 ERROR: Internal Server Error: /community/lostark/dcinside
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/controller/lost_views.py", line 24, in dcinside
+    return JsonResponse(card_list, self=False)
+TypeError: __init__() got multiple values for argument 'self'
+2018-10-27 16:49:08,765 ERROR: Internal Server Error: /community/lostark/dcinside
+Traceback (most recent call last):
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 249, in _legacy_get_response
+    response = self._get_response(request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/user/PycharmProjects/coincommunity/helloworld/lostark/controller/lost_views.py", line 24, in dcinside
+    return JsonResponse(card_list_dc, safe=True)
+  File "/Users/user/PycharmProjects/coincommunity/.venv/lib/python3.6/site-packages/django/http/response.py", line 524, in __init__
+    'In order to allow non-dict objects to be serialized set the '
+TypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.
+2020-03-25 16:29:27,661 WARNING: Not Found: /favicon.ico
+2020-03-25 16:30:16,323 WARNING: Not Found: /coinpann
