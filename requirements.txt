@@ -6,7 +6,7 @@ idna==2.6
 lxml==4.2.1
 pytz==2018.4
 requests==2.20.0
-urllib3==1.24.2
+urllib3==1.26.5
 
 elasticsearch>=6.0.0,<7.0.0
 pandas==0.25.1
